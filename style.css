@@ -1,0 +1,53 @@
+@font-face{
+  font-family:"Sandoll MiSaeng";
+  src:url("SDMiSaeng.ttf⁩") format("truetype");
+}
+body{
+  font-family:Sandoll MiSaeng;
+  font-size:30px;
+  background-color: azure
+}
+a {
+  color:PowderBlue;
+  text-decoration:none;
+}
+#active {
+  color:SteelBlue;
+  text-decoration:underline;
+}
+h1 {
+  font-size:80px;
+  text-align:center;
+  border-bottom:lightgray solid 2px;
+  padding:20px;
+  margin:0
+}
+ol {
+  border-right:lightgray solid 2px;
+  font-size: 30px;
+  color:powderblue;
+  margin:0;
+  padding:25px;
+}
+#grid {
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol {
+  padding-left: 33px;
+}
+#article {
+  padding-left:25px;
+}
+@media(max-width:700px){
+  #grid {
+    display:block;
+  }
+  ol {
+    border-right:none;
+    text-align: center;
+  }
+  h1 {
+    font-size:46px;
+  }
+}
